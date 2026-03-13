@@ -20,7 +20,6 @@
       font-weight: bold;
       text-align: center;
       padding: 8px 20px;
-      border-bottom: 2px solid #666;
     }
 
     .dias_semana {
@@ -28,12 +27,13 @@
       padding: 5px 10px;
       border: 1px solid #020202;
       background: #fff;
-      vertical-align: middle;
+      
     }
 
     td {
-        font-size: 19px;
+      font-size: 19px;
       border: 1px solid #000000;
+      border-collapse: collapse;
       vertical-align: middle;
       padding: 10px 14px;
       min-width: 120px;
@@ -52,6 +52,7 @@
     .horas {font-size: 20px;}
   </style>
 </head>
+
 <body>
 
 <table>
@@ -71,12 +72,12 @@
     <tr>
       <td rowspan="2"class="horas">15:00<br>15:55</td>
       <td class="redes" rowspan="4" style="padding:10px 14px;">
-        <div><span>0224 S.Op.Xε</span></div>
+        <div><span>0224 S.Op.Xa</span></div>
         <div><span>Nuri/Ale</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
       <td class="redes" rowspan="4" style="padding:10px 14px;">
-        <div><span>0224 S.Op.Xε</span></div>
+        <div><span>0224 S.Op.Xa</span></div>
         <div><span>Nuri/Ale</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
@@ -100,14 +101,14 @@
     <tr></tr>
     <tr>
       <td rowspan="2"class="horas">16:50<br>17:45</td>
-      <td class="pjweb" rowspan="2" style="padding:10px 14px;">
+      <td class="pjweb" rowspan="4" style="padding:10px 14px;">
         <div><span>1713.2 PJ Sis</span></div>
-        <div><span>Gerard./ Pedr</span></div>
+        <div><span>Gerard/ Pedr</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
       <td class="pjweb" rowspan="2" style="padding:10px 14px;">
         <div><span>1713.2 PJ Sis</span></div>
-        <div><span>Gerard.</span></div>
+        <div><span>Gerard</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
       <td class="tutoria" rowspan="2" style="padding:10px 14px;">
@@ -115,7 +116,7 @@
         <div><span>Alex / Pedro</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
-      <td class="seguridad" rowspan="2" style="padding:10px 14px;">
+      <td class="seguridad" rowspan="4" style="padding:10px 14px;">
         <div><span>0226 Segur</span></div>
         <div><span>Pedro</span></div>
         <div><span>301</span> <span>SMX2</span></div>
@@ -131,11 +132,7 @@
 
     <tr>
       <td rowspan="2"class="horas">17:45<br>18:40</td>
-      <td class="pjweb" rowspan="2" style="padding:10px 14px;">
-        <div><span>1713.2 PJ Sis</span></div>
-        <div><span>Gerard./ Pedr</span></div>
-        <div><span>301</span> <span>SMX2</span></div>
-      </td>
+    
       <td class="seguridad" rowspan="2" style="padding:10px 14px;">
         <div><span>0226 Segur</span></div>
         <div><span>Pedro</span></div>
@@ -146,10 +143,7 @@
         <div><span>Alberto</span></div>
         <div><span>301</span> <span>SMX2</span></div>
       </td>
-      <td class="seguridad" rowspan="2" style="padding:10px 14px;">
-        <div><span>0226 Segur</span></div>
-        <div><span>Pedro</span></div>
-        <div><span>301</span> <span>SMX2</span></div>
+    
       </td>
       <td class="vacio" rowspan="2"></td>
     </tr>
@@ -185,8 +179,24 @@
     </tr>
     <tr></tr>
 
-  </tbody>
 </table>
-
+<!--
+HTML tags:
+  <table>: Crea una tabla
+  <tr>: Crea una fila en la tabla
+  <td>: Crea una celda en la tabla
+  <th>: Crea una celda de encabezado
+  <caption>: Crea un título para la tabla
+Atributos:
+  colspan: Permite combinar una celda a través de varias columnas
+  rowspan: Permite combinar una celda a través de varias filas
+  style: Permite aplicar estilos CSS directamente a un elemento HTML
+Estilos:
+  border: Define el estilo, ancho y color del borde
+  border-collapse: Define si los bordes de la tabla se juintan en un solo borde
+  text-align: Cambia la alineación del texto 
+  width: Cambia el ancho de un elemento
+  background-color: Pone el color de fondo
+-->
 </body>
 </html>
